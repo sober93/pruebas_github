@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coffee Survey</title>
+<link href="./style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="./contenedores.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+	<h1>All About Coffee</h1>
+	<nav>	
+		<ul class="navegador1">
+			<li><a href="./index.html"> Home </a></li>
+			<li><a href="./roasting.html"> Roasting </a></li>
+			<li><a href="./grinding.html"> Grinding </a></li>
+			<li><a href="./brewing.html"> Brewing </a></li>
+			<li><a href="./drinks.html"> Drinks </a></li>
+			<li><a href="./survey.html"> Coffe survey </a></li>
+		</ul>
+	</nav>
+</header>
+	<h1>Coffee Survey</h1>
+	<figure class="contenedor3">
+	<img src="./images/espresso.jpg" />
+	</figure>
+<form action="#" method="GET">
+			(*obligatory)
+	<fieldset>
+		<legend>personal information</legend>
+			<p><label for="id_name"> your Name:</label><br /><input type="text" name="name" id="id_name" size="40" placeholder="*" autofocus required /></p>
+
+			<p><label for="id_email">Email Address:</label><br /><input type="email" name="email" id="id_email" size="40" placeholder="*enter a valid email adress" required /></p>
+	</fieldset>
+	<fieldset>
+		<legend>your coffe preference</legend>
+			<p>Tell us your coffee preparation methods.</p>
+			<textarea rows="6" cols="40"></textarea>
+
+			<p> you grind your own beans? </p>
+			<p><input type="radio" name="gustos" id="id_yes" /> <label for="id_yes">yes</label></p>
+			<p><input type="radio" name="gustos" id="id_no" /> <label for="id_no">no</label></p>
+
+			<p>How do you drink your coffee?</p>
+			<p><input type="checkbox" name="sugar" id="id_sugar" /> <label for="id_sugar">with sugar</label></p>
+			<p><input type="checkbox" name="cream" id="id_cream" /><label for="id_cream">with cream</label></p>
+			<p> is your favorite coffee drink?<br />
+		<select name="coffes" id="id_coffes">
+
+
+			<option value="drink"> please select a drink</option>
+			<option value="coffe">drip coffee</option>
+			<option value="press">french press</option>
+			<option value="espresso">espresso</option>
+			<option value="latte">latte</option>
+			<option value="flavored">flavored</option>
+		</select></p>
+
+			<input type="submit" value="send" name="aceptar" />
+			<input type="reset" value="reset" name="reset" />
+	</fieldset>
+</form>
+<footer>
+<nav>
+	<ul class="navegador2">
+		<li><a href="./index.html"> Home </a></li>
+		<li><a href="./roasting.html"> Roasting </a></li>
+		<li><a href="./grinding.html"> Grinding </a></li>
+		<li><a href="./brewing.html"> Brewing </a></li>
+		<li><a href="./drinks.html"> Drinks </a></li>
+		<li><a href="./survey.html"> Coffe survey </a></li>
+	</ul>
+</nav>
+</footer>
+</body>
+</html>
